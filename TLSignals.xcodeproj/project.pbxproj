@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49EE57981677A1DE000D730D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EE57971677A1DE000D730D /* Foundation.framework */; };
+		49EE57A71677A1DF000D730D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EE57A61677A1DF000D730D /* SenTestingKit.framework */; };
+		49EE57A91677A1DF000D730D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EE57A81677A1DF000D730D /* UIKit.framework */; };
+		49EE57AA1677A1DF000D730D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EE57971677A1DE000D730D /* Foundation.framework */; };
+		49EE57AD1677A1DF000D730D /* libTLSignals.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EE57941677A1DE000D730D /* libTLSignals.a */; };
+		49EE57B31677A1DF000D730D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49EE57B11677A1DF000D730D /* InfoPlist.strings */; };
+		49EE57B61677A1DF000D730D /* TLSignalsTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 49EE57B51677A1DF000D730D /* TLSignalsTests.mm */; };
+		49EE57C91677A373000D730D /* TLSignals.mm in Sources */ = {isa = PBXBuildFile; fileRef = 49EE57C81677A373000D730D /* TLSignals.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49EE57AB1677A1DF000D730D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49EE578B1677A1DE000D730D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49EE57931677A1DE000D730D;
+			remoteInfo = TLSignals;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		49EE57921677A1DE000D730D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		49EE57941677A1DE000D730D /* libTLSignals.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTLSignals.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		49EE57971677A1DE000D730D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		49EE579B1677A1DE000D730D /* TLSignals-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TLSignals-Prefix.pch"; sourceTree = "<group>"; };
+		49EE57A51677A1DF000D730D /* TLSignalsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TLSignalsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49EE57A61677A1DF000D730D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		49EE57A81677A1DF000D730D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		49EE57B01677A1DF000D730D /* TLSignalsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TLSignalsTests-Info.plist"; sourceTree = "<group>"; };
+		49EE57B21677A1DF000D730D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		49EE57B41677A1DF000D730D /* TLSignalsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLSignalsTests.h; sourceTree = "<group>"; };
+		49EE57B51677A1DF000D730D /* TLSignalsTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TLSignalsTests.mm; sourceTree = "<group>"; };
+		49EE57C71677A373000D730D /* TLSignals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLSignals.h; sourceTree = "<group>"; };
+		49EE57C81677A373000D730D /* TLSignals.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TLSignals.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49EE57911677A1DE000D730D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49EE57981677A1DE000D730D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49EE57A11677A1DF000D730D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49EE57A71677A1DF000D730D /* SenTestingKit.framework in Frameworks */,
+				49EE57A91677A1DF000D730D /* UIKit.framework in Frameworks */,
+				49EE57AA1677A1DF000D730D /* Foundation.framework in Frameworks */,
+				49EE57AD1677A1DF000D730D /* libTLSignals.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49EE57891677A1DE000D730D = {
+			isa = PBXGroup;
+			children = (
+				49EE57991677A1DE000D730D /* TLSignals */,
+				49EE57AE1677A1DF000D730D /* TLSignalsTests */,
+				49EE57961677A1DE000D730D /* Frameworks */,
+				49EE57951677A1DE000D730D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49EE57951677A1DE000D730D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49EE57941677A1DE000D730D /* libTLSignals.a */,
+				49EE57A51677A1DF000D730D /* TLSignalsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49EE57961677A1DE000D730D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49EE57971677A1DE000D730D /* Foundation.framework */,
+				49EE57A61677A1DF000D730D /* SenTestingKit.framework */,
+				49EE57A81677A1DF000D730D /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49EE57991677A1DE000D730D /* TLSignals */ = {
+			isa = PBXGroup;
+			children = (
+				49EE579A1677A1DE000D730D /* Supporting Files */,
+				49EE57C71677A373000D730D /* TLSignals.h */,
+				49EE57C81677A373000D730D /* TLSignals.mm */,
+			);
+			path = TLSignals;
+			sourceTree = "<group>";
+		};
+		49EE579A1677A1DE000D730D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49EE579B1677A1DE000D730D /* TLSignals-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49EE57AE1677A1DF000D730D /* TLSignalsTests */ = {
+			isa = PBXGroup;
+			children = (
+				49EE57B41677A1DF000D730D /* TLSignalsTests.h */,
+				49EE57B51677A1DF000D730D /* TLSignalsTests.mm */,
+				49EE57AF1677A1DF000D730D /* Supporting Files */,
+			);
+			path = TLSignalsTests;
+			sourceTree = "<group>";
+		};
+		49EE57AF1677A1DF000D730D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49EE57B01677A1DF000D730D /* TLSignalsTests-Info.plist */,
+				49EE57B11677A1DF000D730D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49EE57931677A1DE000D730D /* TLSignals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49EE57B91677A1DF000D730D /* Build configuration list for PBXNativeTarget "TLSignals" */;
+			buildPhases = (
+				49EE57901677A1DE000D730D /* Sources */,
+				49EE57911677A1DE000D730D /* Frameworks */,
+				49EE57921677A1DE000D730D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TLSignals;
+			productName = TLSignals;
+			productReference = 49EE57941677A1DE000D730D /* libTLSignals.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		49EE57A41677A1DF000D730D /* TLSignalsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49EE57BC1677A1DF000D730D /* Build configuration list for PBXNativeTarget "TLSignalsTests" */;
+			buildPhases = (
+				49EE57A01677A1DF000D730D /* Sources */,
+				49EE57A11677A1DF000D730D /* Frameworks */,
+				49EE57A21677A1DF000D730D /* Resources */,
+				49EE57A31677A1DF000D730D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49EE57AC1677A1DF000D730D /* PBXTargetDependency */,
+			);
+			name = TLSignalsTests;
+			productName = TLSignalsTests;
+			productReference = 49EE57A51677A1DF000D730D /* TLSignalsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49EE578B1677A1DE000D730D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Trylogic;
+			};
+			buildConfigurationList = 49EE578E1677A1DE000D730D /* Build configuration list for PBXProject "TLSignals" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 49EE57891677A1DE000D730D;
+			productRefGroup = 49EE57951677A1DE000D730D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49EE57931677A1DE000D730D /* TLSignals */,
+				49EE57A41677A1DF000D730D /* TLSignalsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49EE57A21677A1DF000D730D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49EE57B31677A1DF000D730D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49EE57A31677A1DF000D730D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49EE57901677A1DE000D730D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49EE57C91677A373000D730D /* TLSignals.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49EE57A01677A1DF000D730D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49EE57B61677A1DF000D730D /* TLSignalsTests.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49EE57AC1677A1DF000D730D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49EE57931677A1DE000D730D /* TLSignals */;
+			targetProxy = 49EE57AB1677A1DF000D730D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49EE57B11677A1DF000D730D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49EE57B21677A1DF000D730D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49EE57B71677A1DF000D730D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		49EE57B81677A1DF000D730D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49EE57BA1677A1DF000D730D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/TLSignals.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TLSignals/TLSignals-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		49EE57BB1677A1DF000D730D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/TLSignals.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TLSignals/TLSignals-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		49EE57BD1677A1DF000D730D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TLSignals/TLSignals-Prefix.pch";
+				INFOPLIST_FILE = "TLSignalsTests/TLSignalsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		49EE57BE1677A1DF000D730D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TLSignals/TLSignals-Prefix.pch";
+				INFOPLIST_FILE = "TLSignalsTests/TLSignalsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49EE578E1677A1DE000D730D /* Build configuration list for PBXProject "TLSignals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49EE57B71677A1DF000D730D /* Debug */,
+				49EE57B81677A1DF000D730D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49EE57B91677A1DF000D730D /* Build configuration list for PBXNativeTarget "TLSignals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49EE57BA1677A1DF000D730D /* Debug */,
+				49EE57BB1677A1DF000D730D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		49EE57BC1677A1DF000D730D /* Build configuration list for PBXNativeTarget "TLSignalsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49EE57BD1677A1DF000D730D /* Debug */,
+				49EE57BE1677A1DF000D730D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49EE578B1677A1DE000D730D /* Project object */;
+}

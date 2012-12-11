@@ -1,0 +1,11 @@
+Thumbs.db
+.DS_Store
+
+xcuserdata
+
+*.xcworkspace
+
+Podfile.lock
+Pods/
+
+.idea/
