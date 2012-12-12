@@ -69,15 +69,15 @@
 
 -(void)testRemoveAllObservers
 {
-	auto signal = new TLSignal<NSString *, BOOL>(self);
+	auto signal = new TLSignal<void *>(self);
 	__block int value = 42;
 	
-	auto observerBlock = ^(id target, NSString *stringParam, BOOL boolParam)
+	auto observerBlock = ^(id target, void *notUsed)
 	{
 		value = 9000;
 	};
 	
-	auto observerBlock2 = ^(id target, NSString *stringParam, BOOL boolParam)
+	auto observerBlock2 = ^(id target, void *notUsed)
 	{
 		value = 100500;
 	};
@@ -87,7 +87,7 @@
 	
 	signal->removeAllObservers();
 	
-	signal->notify(@"not used", YES);
+	signal->notify(0);
 	
 	STAssertEquals(value, 42, @"value must not be changed after notification");
 }
