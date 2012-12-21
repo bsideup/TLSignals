@@ -6,30 +6,37 @@
 //  Copyright (c) 2012 Trylogic. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#include <objc/objc.h>
 
-#import <functional>
-#include <vector>
+#define tl_synthesize_signal(propName, T...) \
+ \
+-(TLSignal<T> *)propName \
+{\
+    if(_##propName == nil) { _##propName = new TLSignal<T>(self);} \
+    return _##propName; \
+} \
+TLSignal<T> *_##propName;
 
 #ifndef __TLSignal_H_
 #define __TLSignal_H_
 
-using namespace std;
+#include <functional>
+#include <vector>
+#include <algorithm>
+#import <objc/message.h>
 
 template <typename... T>
 class TLSignal
 {
-    typedef void (^TLSignalBlock)(id, T ...args);
-    vector<TLSignalBlock> blocks;
-    id _target;
-	
+
 public:
-	
+    typedef void (^TLSignalBlock)(id, T ...args);
+
     TLSignal(id target)
     {
         _target = target;
     }
-	
+
     ~TLSignal()
     {
         _target = nil;
@@ -43,7 +50,7 @@ public:
 	
     void addObserver( TLSignalBlock block)
     {
-        if(find(blocks.begin(), blocks.end(), block) == blocks.end())
+        if(std::find(blocks.begin(), blocks.end(), block) == blocks.end())
         {
             blocks.push_back(block);
         }
@@ -51,7 +58,7 @@ public:
 	
     void removeObserver( TLSignalBlock block)
     {
-        blocks.erase(remove(blocks.begin(), blocks.end(), block), blocks.end());
+        blocks.erase(std::remove(blocks.begin(), blocks.end(), block), blocks.end());
     }
 	
     void removeAllObservers()
@@ -66,6 +73,10 @@ public:
             blocks[i](_target, args...);
         }
     }
+
+private:
+    std::vector<TLSignalBlock> blocks;
+    id _target;
 };
 
 #endif //__TLSignal_H_

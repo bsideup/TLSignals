@@ -14,7 +14,7 @@
 		49EE57AD1677A1DF000D730D /* libTLSignals.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EE57941677A1DE000D730D /* libTLSignals.a */; };
 		49EE57B31677A1DF000D730D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49EE57B11677A1DF000D730D /* InfoPlist.strings */; };
 		49EE57B61677A1DF000D730D /* TLSignalsTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 49EE57B51677A1DF000D730D /* TLSignalsTests.mm */; };
-		49EE57C91677A373000D730D /* TLSignals.mm in Sources */ = {isa = PBXBuildFile; fileRef = 49EE57C81677A373000D730D /* TLSignals.mm */; };
+		49EE57C91677A373000D730D /* TLSignals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49EE57C81677A373000D730D /* TLSignals.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +50,8 @@
 		49EE57B21677A1DF000D730D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		49EE57B41677A1DF000D730D /* TLSignalsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLSignalsTests.h; sourceTree = "<group>"; };
 		49EE57B51677A1DF000D730D /* TLSignalsTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TLSignalsTests.mm; sourceTree = "<group>"; };
-		49EE57C71677A373000D730D /* TLSignals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLSignals.h; sourceTree = "<group>"; };
-		49EE57C81677A373000D730D /* TLSignals.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TLSignals.mm; sourceTree = "<group>"; };
+		49EE57C71677A373000D730D /* TLSignals.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = TLSignals.h; sourceTree = "<group>"; };
+		49EE57C81677A373000D730D /* TLSignals.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TLSignals.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +111,7 @@
 			children = (
 				49EE579A1677A1DE000D730D /* Supporting Files */,
 				49EE57C71677A373000D730D /* TLSignals.h */,
-				49EE57C81677A373000D730D /* TLSignals.mm */,
+				49EE57C81677A373000D730D /* TLSignals.cpp */,
 			);
 			path = TLSignals;
 			sourceTree = "<group>";
@@ -241,7 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49EE57C91677A373000D730D /* TLSignals.mm in Sources */,
+				49EE57C91677A373000D730D /* TLSignals.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +393,7 @@
 				49EE57BB1677A1DF000D730D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49EE57BC1677A1DF000D730D /* Build configuration list for PBXNativeTarget "TLSignalsTests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +402,7 @@
 				49EE57BE1677A1DF000D730D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
