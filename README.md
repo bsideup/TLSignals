@@ -1,4 +1,4 @@
 TLSignals
 =========
 
-Signals for objective-c
+Signals for Objective-C++
