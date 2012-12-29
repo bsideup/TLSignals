@@ -30,7 +30,7 @@ class TLSignal
 {
 	
 public:
-    typedef void (^TLSignalBlock)(TLSignal<T...> sig, T ...args);
+    typedef void (^TLSignalBlock)(TLSignal<T...> *sig, T ...args);
 	
     TLSignal(id target)
     {
@@ -70,7 +70,7 @@ public:
     {
         for (int i = 0; i < blocks.size(); i++)
         {
-            blocks[i](*this, args...);
+            blocks[i](this, args...);
         }
     }
 	
