@@ -23,7 +23,7 @@
 	auto signal = new TLSignal<NSString *, BOOL>(self);
 	__block int value = 0;
 	
-	auto observerBlock = ^(id target, NSString *stringParam, BOOL boolParam)
+	auto observerBlock = ^(TLSignal<NSString *, BOOL> target, NSString *stringParam, BOOL boolParam)
 	{
 		value += 42;
 	};
@@ -44,12 +44,12 @@
 	auto signal = new TLSignal<NSString *, BOOL>(self);
 	__block int value = 0;
 	
-	auto observerBlock = ^(id target, NSString *stringParam, BOOL boolParam)
+	auto observerBlock = ^(TLSignal<NSString *, BOOL> target, NSString *stringParam, BOOL boolParam)
 	{
 		value += 42;
 	};
 	
-	auto observerBlock2 = ^(id target, NSString *stringParam, BOOL boolParam)
+	auto observerBlock2 = ^(TLSignal<NSString *, BOOL> target, NSString *stringParam, BOOL boolParam)
 	{
 		value += 1;
 	};
@@ -72,12 +72,12 @@
 	auto signal = new TLSignal<void *>(self);
 	__block int value = 42;
 	
-	auto observerBlock = ^(id target, void *notUsed)
+	auto observerBlock = ^(TLSignal<void *> target, void *notUsed)
 	{
 		value = 9000;
 	};
 	
-	auto observerBlock2 = ^(id target, void *notUsed)
+	auto observerBlock2 = ^(TLSignal<void *> target, void *notUsed)
 	{
 		value = 100500;
 	};
@@ -98,7 +98,7 @@
 	
 	__block int value;
 	
-	auto observerBlock = ^(id target, NSString *stringParam, BOOL boolParam)
+	auto observerBlock = ^(TLSignal<NSString *, BOOL> target, NSString *stringParam, BOOL boolParam)
 	{
 		value = boolParam ? 42 : 9000;
 	};

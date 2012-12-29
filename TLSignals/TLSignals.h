@@ -9,11 +9,11 @@
 #include <objc/objc.h>
 
 #define tl_synthesize_signal(propName, T...) \
- \
+\
 -(TLSignal<T> *)propName \
 {\
-    if(_##propName == nil) { _##propName = new TLSignal<T>(self);} \
-    return _##propName; \
+if(_##propName == nil) { _##propName = new TLSignal<T>(self);} \
+return _##propName; \
 } \
 TLSignal<T> *_##propName;
 
@@ -28,15 +28,15 @@ TLSignal<T> *_##propName;
 template <typename... T>
 class TLSignal
 {
-
+	
 public:
-    typedef void (^TLSignalBlock)(id, T ...args);
-
+    typedef void (^TLSignalBlock)(TLSignal<T...> sig, T ...args);
+	
     TLSignal(id target)
     {
         _target = target;
     }
-
+	
     ~TLSignal()
     {
         _target = nil;
@@ -70,10 +70,10 @@ public:
     {
         for (int i = 0; i < blocks.size(); i++)
         {
-            blocks[i](_target, args...);
+            blocks[i](*this, args...);
         }
     }
-
+	
 private:
     std::vector<TLSignalBlock> blocks;
     id _target;
