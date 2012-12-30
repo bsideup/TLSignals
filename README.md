@@ -44,7 +44,7 @@ AppDelegate.mm
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)options
 {
     UIWindow window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.viewController = [[ExampleViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    self.viewController = [[ExampleViewController alloc] initWithNibName:@"ExampleViewController" bundle:nil];
     
     // Subscribe to our event
     self.viewController.viewDidLoadSignal->addObserver(^(TLSignal<UIView *> *signal, UIView *targetView)
