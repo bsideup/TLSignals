@@ -30,7 +30,7 @@ class TLSignal
 {
 	
 public:
-    typedef void (^TLSignalBlock)(TLSignal<T...> *sig, T ...args);
+    typedef void (^TLSignalBlock)(TLSignal *sig, T ...args);
 	
     TLSignal(id target)
     {
